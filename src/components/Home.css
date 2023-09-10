@@ -1,0 +1,17 @@
+.home-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    width: 40rem;
+    padding: 0%;
+    margin: 0%;
+    border: 0.2rem solid #deaa86;
+}
+
+h1{
+    color: #deaa86;
+    text-shadow: 5px 5px 10px black;
+}
