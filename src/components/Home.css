@@ -14,4 +14,19 @@
 h1{
     color: #deaa86;
     text-shadow: 5px 5px 10px black;
+    transition: color 1.5s ease-in-out;
+}
+
+h1:hover{
+    color: whitesmoke;
+    text-shadow: 5px 5px 10px #deaa86;
+}
+
+
+@media (max-width:900px){
+    .home-div{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+    }
 }
