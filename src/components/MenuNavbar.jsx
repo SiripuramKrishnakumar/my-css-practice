@@ -6,9 +6,9 @@ const MenuNavbar = () => {
     return (
       <Fragment>
         <div className="navbar">
-          <input type="checkbox" className="nav-checkbox" id="click" />
+          <input type="checkbox" className="nav-checkbox" id="nav-click" />
           <div className="sidebar">
-            <label htmlFor="click">
+            <label htmlFor="nav-click">
               <div className="menu-icon">
                 <div className="line line-1"> </div>
                 <div className="line line-2"> </div>
@@ -45,13 +45,9 @@ const MenuNavbar = () => {
           <nav className="navigation">
             <div className="navigation-header">
               <h1 className="navigation-heading">Grand Hotel</h1>
-              <button className="close-button"
-                onClick={() => {
-                  document.getElementById("click").checked = true;
-                }}
-              >
-                X
-              </button>
+              <label htmlFor="nav-click">
+                <span className="close-button">&#10005;</span>
+              </label>
               <Form className="nav-form">
                 <input
                   type="text"

@@ -7,18 +7,10 @@ const RootLayout = () => {
     return (
       <div className="root">
         <MenuNavbar />
-        <button
-          id="navCloseBtn"
-          style={{ display: "none" }}
-          onClick={() => {
-            document.getElementById("click").checked = true;
-          }}
-        ></button>
-        <label htmlFor="navCloseBtn">
+        <input type="checkbox" className="nav-checkbox" id="nav-click" />
           <div className="layout">
             <Outlet />
           </div>
-        </label>
       </div>
     );
 }

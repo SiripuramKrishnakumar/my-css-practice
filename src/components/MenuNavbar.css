@@ -28,7 +28,7 @@
 
 .menu-icon:hover .line{
     width: 2rem;
-    background-color: #deaa86;
+    background-color: brown;
 }
 
 
@@ -72,7 +72,7 @@ a:active{
 }
 
 a:hover{
-    color: #deaa86;
+    color: brown;
 }
 
 .year{
@@ -83,12 +83,12 @@ a:hover{
 }
 
 .navigation{
-    margin-left: 8rem;
+    margin-left: -50rem;
     position: fixed;
     border-style: hidden;
     height: 100%;
     width: 40rem;
-    background-image: linear-gradient(to bottom,rgba(0,0,0,.4),rgba(0,0,0,.6)),linear-gradient(to bottom,rgba(207, 194, 194, 0.4),rgba(166, 199, 105, 0.6));
+    background-image: linear-gradient(to bottom,rgba(19, 15, 15, 0.4),rgba(166, 199, 105, 0.3)),url('../images/day-offer-img-one.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 1s ease;
@@ -100,9 +100,12 @@ a:hover{
     display: none;
 }
 
-.nav-checkbox:checked ~ .navigation, .layout{
-    margin-left: -50rem;
+.nav-checkbox:checked ~ .navigation{
+    margin-left: 8rem;
+    cursor: pointer;
 }
+
+
 
 
 .nav-last-item{
@@ -114,21 +117,23 @@ a:hover{
 p{
     font-size: 1.4rem;
 }
+
 h1{
     text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    color: black;
-    text-shadow: 5px 5px 10px #deaa86;
+    font-size: 2rem;
+    font-weight: 800;
+    color:#cadddf;
+    text-shadow: 5px 5px 10px black;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     transition: color 1s ease;
 }
 
 h1:hover{
-    color: #deaa86;
+    color: #5dbcc7;
     text-shadow: 5px 5px 10px black;
 }
+
 
 h2{
     text-align: center;
@@ -161,15 +166,20 @@ h2:hover{
     outline: none;
     color: #deaa86;
     border-color: #deaa86;
-    background-color: rgba(0,0,0,.4);
+    background-color: transparent;
     border-radius: .5rem .5rem .5rem .5rem;
+}
+
+::placeholder{
+    color: #deaa86;
 }
 
 .navigation-search-button{
     text-align: center;
-    color: black;
+    color:  #0c0b0a;
     font-weight: 300;
-    background-color: transparent;
+    background-color: rgba(0,0,0,.2);
+    border-color: transparent;
     text-shadow: 5px 5px 15px #deaa86;
     border-radius: 1rem 1rem 1rem 1rem;
     outline: none;
@@ -178,19 +188,23 @@ h2:hover{
 
 .navigation-search-button:hover
 {
-    background-color: rgba(0,0,0,.2);
-    color: #deaa86;
+    background-color: rgba(0,0,0,.4);
+    box-shadow: -5px 5px 10px #deaa86;
 }
 
 .close-button{
     position: relative;
-    top: -8rem;
+    top: -5rem;
     left: 35rem;
+    color: #deaa86;
     background-color: transparent;
+    border: snow solid;
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
 .close-button:hover{
-    color: #deaa86;
     text-shadow: 5px 5px 10px black;
     box-shadow: 5px 5px 10px #deaa86;
 }
